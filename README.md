@@ -1,3 +1,3 @@
 # iosd Synergy Front End
 
-web collaboration
+Front End of a web app project for the WebDev event of Synergy(DTU)
