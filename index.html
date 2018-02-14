@@ -48,6 +48,12 @@ h1{
 		  <li class="nav-item">
 			<a class="nav-link " href="#about" >About Us</a>
 		  </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#our">Our Founders</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="#contact">Contact</a>
+      </li>
 		</ul>
 	  </nav>
 	<div class="jumbotron text-center container-fluid">
@@ -77,7 +83,7 @@ h1{
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-lg btn-success">Go</button>
+          <button type="button" class="btn btn-lg btn-success" onclick="return q()">Go</button>
         </div>
         
       </div>
@@ -163,7 +169,7 @@ h1{
 <div class="row" id="about">
 <div class="col-4" align="center"><br>
   <img src="images/logo.png" class="container-fluid cr" alt="a"><br><br>
-  <button class="btn btn-danger btn-lg dark" style="background-color:dark;color:white">Get in Touch</button>
+  <button class="btn btn-danger btn-lg dark" style="background-color:dark;color:white" onclick="return p()">Get in Touch</button>
  </div>
  <div class="col-8 container-fluid">
       <h1>About us</h1>
@@ -175,7 +181,81 @@ h1{
 	  Quisque ut neque neque. Curabitur molestie nisi vitae vestibulum auctor. Donec eget aliquet neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc malesuada turpis feugiat aliquet consequat. Suspendisse vel augue eget risus gravida interdum vitae vitae ex. Praesent euismod ex nec pellentesque facilisis. Pellentesque turpis lacus, faucibus eget rhoncus sed, vestibulum id turpis. Maecenas eget est nec purus congue convallis. Maecenas malesuada felis ligula. Ut eget diam ut orci blandit vulputate ut eget justo. Maecenas interdum scelerisque erat, non pellentesque orci malesuada eu. Integer accumsan vehicula tortor aliquet fringilla. Donec elementum efficitur augue. Cras vulputate eros non egestas semper. Mauris ut lacinia quam.</p>
 </div>
 </div>
+</div><br>
+<div class="container-fluid" align="center" id="our">
+<h1>Our Founders</h1>
+<div class="row">
+<div class="col-6 container">
+  <h2><b>Head</b></h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="images/anonymous_man.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h2 class="card-title">Light Yagami</h2>
+      <p class="card-text">Civil Engineer</p>
+      <a href="#" data-toggle="popover" title="Light Yagami" data-content="26 year old civil engineer from Indian Institute of Technology." class="btn btn-danger btn-lg">See Profile</a>
+    </div>
+  </div>
 </div>
+<div class="col-6 container">
+  <h2><b>Financer</b></h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="images/anonymous_man.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h2 class="card-title">Jean Paul</h2>
+      <p class="card-text">Business Tycoon</p>
+      <a href="#" data-toggle="popover" title="Jean Paul" data-content="30 year old one of the leading business tycoons of the world." class="btn btn-danger btn-lg">See Profile</a>
+    </div>
+  </div><br>
+</div><br>
+<div class="container-fluid bgc" id="contact">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5" align=right>
+      <h5><b>Contact us and we'll get back to you within 24 hours.</b></h5>
+      <h5><span class="glyphicon glyphicon-map-marker"></span><b> New Delhi, India</b></h5>
+      <h5><span class="glyphicon glyphicon-phone"></span><b> +91 3815726490</b></h5>
+      <h5><span class="glyphicon glyphicon-envelope"></span><b> rooftopngo@gmail.com</b></h5> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit" onclick="return p()">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Webpage made by Pallavv Malhotra and Ashish Pratap.</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+<script type="text/javascript">
+            function p() {
+                alert("Mail successfully sent!");
+            }
+            function q() {
+                alert("Login Successful!");
+            }
+</script>
 
 
 
